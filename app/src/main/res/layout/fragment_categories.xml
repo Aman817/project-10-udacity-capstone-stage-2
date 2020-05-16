@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/category_articles_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categories_article_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/adView"
+        android:focusable="true"/>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/categories_article_no_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/categories_no_network_connection_text_size"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/no_internet_connection_text_view_text"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/categories_article_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/categories_no_data_text_size"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/no_data_text"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/navigation_drawer_top_headlines_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_drawer_top_headlines"
+            android:title="@string/navigation_drawer_top_headline_text"/>
+
+        <item
+            android:id="@+id/navigation_drawer_top_headlines_select_country"
+            android:title="@string/navigation_drawer_top_headline_country_select_text"/>
+
+        <item
+            android:id="@+id/navigation_drawer_top_headlines_select_category"
+            android:title="@string/navigation_drawer_top_headline_category_select_text"/>
+
+    </group>
+
+    <group
+        android:id="@+id/navigation_drawer_search_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_drawer_search"
+            android:title="@string/navigation_drawer_search_text"/>
+
+    </group>
+
+    <group
+        android:id="@+id/navigation_drawer_save_to_read_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_drawer_save_to_read"
+            android:title="@string/navigation_drawer_save_to_read_text"/>
+
+    </group>
+
+</menu>
